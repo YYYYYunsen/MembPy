@@ -1,0 +1,34 @@
+# 输出的PDB文件名
+# outfilename: output.pdb 是生成的双层膜结构的输出文件名。
+# 磷脂类型的数量
+# ntype: 2 是双层膜中磷脂类型的数量。在这个例子中，有两种类型的磷脂。
+# 每层双层膜中的磷脂分子总数
+# nlipidtot: 50 是每层双层膜中磷脂分子的总数。在这个例子中，每层有50个磷脂分子。
+# 模拟盒子的边长（单位：Å）
+# boxlen: 50 是模拟盒子的边长（单位：Å）。它定义了双层膜的二维平面大小。在这个例子中，边长为50Å。
+# 第一层磷脂分子的z轴位置（单位：Å）
+# refz1: 0.0 是第一层磷脂分子的z轴位置。它定义了第一层磷脂分子中心的z轴位置。在这个例子中，第一层的中心在z轴的0.0位置。
+# 第二层磷脂分子的z轴位置（单位：Å）
+# refz2: 40 是第二层磷脂分子的z轴位置。它定义了第二层磷脂分子中心的z轴位置。在这个例子中，第二层的中心在z轴的40.0位置。
+# 第一种磷脂分子的PDB文件名
+# filename_1: OL_PE_OL.pdb 是第一种类型磷脂分子的PDB文件名。在这个例子中，第一种磷脂的PDB文件是 OL_PE_OL.pdb。
+# 第一种磷脂分子的残基名称
+# resname_1: LIP1 是第一种类型磷脂分子的残基名称。在生成的双层膜中，每个分子都将标记为这个名称。在这个例子中，第一种磷脂的残基名称是 LIP1。
+# 第二种磷脂分子的PDB文件名
+# filename_2: OL_PC_PA.pdb 是第二种类型磷脂分子的PDB文件名。在这个例子中，第二种磷脂的PDB文件是 OL_PC_PA.pdb。
+# 第二种磷脂分子的残基名称
+# resname_2: LIP2 是第二种类型磷脂分子的残基名称。在生成的双层膜中，每个分子都将标记为这个名称。在这个例子中，第二种磷脂的残基名称是 LIP2。
+# 是否开启第一层随机旋转（True/False）
+# random_rotation: True 如果设置为True，则在生成第一层时对每个分子进行随机旋转。
+outfilename: output.pdb
+ntype: 2
+nlipidtot: 60
+boxlen: 60
+refz1: 0.0
+refz2: 40
+filename_1: OL_PE_OL.pdb
+resname_1: LIP1
+filename_2: OL_PC_PA.pdb
+resname_2: LIP2
+random_rotation: False
+lipid_ratios: 1:2
