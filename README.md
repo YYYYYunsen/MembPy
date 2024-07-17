@@ -32,6 +32,9 @@
    
 首先使用在线免费药物制剂分子模拟平台FormulationMM(<http://formulationmm.computpharm.org>)和MembPy.py(本人开发的一个专门生各种复杂细胞膜和分子复合物的工具, 即将发布. 关注本人的github以获取最新的发布消息(https://github.com/YYYYYunsen)生成小分子和细胞膜的初始构象.
 
+![Watch the video](https://github.com/YYYYYunsen/MembPy/blob/main/Example/drug_membrane_generation.mp4)
+
+
 
 2. 伞型采样过程的mdp设置.
 
