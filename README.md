@@ -32,8 +32,7 @@
    
 首先使用在线免费药物制剂分子模拟平台FormulationMM(<http://formulationmm.computpharm.org>)和MembPy.py(本人开发的一个专门生各种复杂细胞膜和分子复合物的工具, 即将发布. 关注本人的github以获取最新的发布消息(https://github.com/YYYYYunsen)生成小分子和细胞膜的初始构象.
 
-![Watch the video](https://github.com/YYYYYunsen/MembPy/blob/main/Example/drug_membrane_generation.mp4)
-
+![Watch the video](https://github.com/YYYYYunsen/MembPy/blob/main/Example/title.jpg)(https://github.com/YYYYYunsen/MembPy/blob/main/Example/drug_membrane_generation.mp4)
 
 
 2. 伞型采样过程的mdp设置.
@@ -102,14 +101,14 @@ a.histo图
 ```
 xmgrace -nxy histo.xvg
 ```
-
+![Image text](https://github.com/YYYYYunsen/MembPy/blob/main/Example/image.png)
 从上图可见每一个窗口都合理的分布并重叠, 覆盖整个采样过程.
 
 b.PMF图
 ```
 xmgrace profile.xvg
 ```
-
+![Image text](https://github.com/YYYYYunsen/MembPy/blob/main/Example/image-2.png)
 上图的deltaG就是deltaG(permeability), 用来衡量分子的穿膜难易程度.
 
 ## 小结
