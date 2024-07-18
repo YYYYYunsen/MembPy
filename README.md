@@ -74,7 +74,7 @@ for ((i=0;i<60;i++)); do
 	gmx mdrun -deffnm em.$i -pf pullf-em.$i -px pullx-em.$i -ntmpi 1 -ntomp 16 -v
 
 	sed 's/DIST/'$d'/g' mdp/eq.mdp > grompp.mdp
-	gmx grompp -o eq.$i -c eql.$i -t eql.$i -pp eq.$i -po eq.$i -n index.ndx -maxwarn 99
+	gmx grompp -o eq.$i -c em.$i -t em.$i -pp eq.$i -po eq.$i -n index.ndx -maxwarn 99
 	gmx mdrun -deffnm eq.$i -pf pullf-eq.$i -px pullx-eq.$i -ntmpi  1 -ntomp 16 -update gpu -v 
 
 	sed 's/DIST/'$d'/g' mdp/prd.mdp > grompp.mdp
